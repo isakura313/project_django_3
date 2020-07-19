@@ -2,6 +2,7 @@
     {% block title %}{{ post.title }}{% endblock %}
     {% block content %}
     <h3 class="is-size-2 title has-text-centered"> {{ post.title }} </h3>
+<img src="{{ post.blog_Post_Img.url }}" alt="">
     <p class="blog_body"> {{ post.body|linebreaks }} </p>
     <p class="blot_time">Опубликовано {{ post.publsih }} by {{ post.author }}</p>
 {% endblock %}
